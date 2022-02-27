@@ -3,6 +3,7 @@ import React, {forwardRef} from 'react'
 import styles from './InfoWindow.module.scss'
 import classNames from 'classnames'
 
+let lastPlace: google.maps.places.PlaceResult | null = null
 
 export interface Props {
     readonly place: google.maps.places.PlaceResult | null
@@ -15,6 +16,13 @@ export const InfoWindow = forwardRef<HTMLDivElement, Props>(({
         [styles.base__isVisible]: !!place?.geometry?.location,
     })
 
+    if (place && lastPlace !== place) {
+        console.table(place.address_components?.map((info) => ({
+            ...info,
+            types: info.types.join(','),
+        })), ['long_name', 'short_name', 'types'])
+        lastPlace = place
+    }
     let address = ''
 
     if (place?.address_components) {
