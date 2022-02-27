@@ -57,7 +57,7 @@ function App() {
 
         // Set initial restriction to the greater list of countries.
         autocomplete.setComponentRestrictions({
-            country: ['by', 'de'],
+            country: ['by'],
         })
 
         const southwest = {lat: 5.6108, lng: 136.589326}
