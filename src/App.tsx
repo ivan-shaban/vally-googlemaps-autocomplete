@@ -51,7 +51,6 @@ function App() {
             componentRestrictions: {country: 'by'},
             fields: ['address_components', 'geometry', 'icon', 'name'],
             strictBounds: false,
-            types: ['establishment'],
         }
 
         const autocomplete = new google.maps.places.Autocomplete(input, options)
