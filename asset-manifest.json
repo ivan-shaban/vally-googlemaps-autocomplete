@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vally-googlemaps-autocomplete/static/css/main.89f68dea.css",
-    "main.js": "/vally-googlemaps-autocomplete/static/js/main.c00c3faf.js",
+    "main.js": "/vally-googlemaps-autocomplete/static/js/main.3fd18518.js",
     "index.html": "/vally-googlemaps-autocomplete/index.html",
     "main.89f68dea.css.map": "/vally-googlemaps-autocomplete/static/css/main.89f68dea.css.map",
-    "main.c00c3faf.js.map": "/vally-googlemaps-autocomplete/static/js/main.c00c3faf.js.map"
+    "main.3fd18518.js.map": "/vally-googlemaps-autocomplete/static/js/main.3fd18518.js.map"
   },
   "entrypoints": [
     "static/css/main.89f68dea.css",
-    "static/js/main.c00c3faf.js"
+    "static/js/main.3fd18518.js"
   ]
 }
