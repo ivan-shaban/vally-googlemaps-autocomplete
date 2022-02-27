@@ -4,6 +4,8 @@ import './index.css'
 import {Wrapper} from '@googlemaps/react-wrapper'
 import App from './App'
 
+console.log(`>> secret`, process.env.REACT_APP_GOOGLE_MAP_SECRET);
+
 ReactDOM.render(
     <React.StrictMode>
         <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAP_SECRET!} libraries={['places']}>
